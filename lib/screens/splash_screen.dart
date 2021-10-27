@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     Timer(
         Duration(
-          seconds: 13,
+          seconds: 5,
         ), () {
 
           Navigator.pushReplacementNamed(context, WelcomeScreen.id);
@@ -35,8 +35,8 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children:<Widget> [
             Image.asset("images/logo_cupid1.png",
-              width: 300.0,
-              height: 300.0,
+              width: 250.0,
+              height: 250.0,
             ),
             Text('CUPID ARROW'),
           ],

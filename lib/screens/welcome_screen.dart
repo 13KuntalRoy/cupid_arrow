@@ -14,33 +14,65 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       body: SafeArea(
         child: Center(
           child:Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset("images/logo_cupid.png",
-                    width: 200.0,
-                    height: 200.0,
+                  Image.asset("images/logo_cupid1.png",
+                    width: 60.0,
+                    height: 60.0,
 
                   ),
-                  Text('CUPID ARROW'),
+                  const Text('CUPID ARROW'),
                 ],
+              ),
+             const SizedBox(
+               height: 80.0,
+
               ),
 
               Image.asset("images/couple.png",
-                width: 200.0,
-                height: 200.0,
+                width: 350.0,
+                height: 350.0,
 
               ),
-              Text('WELCOME TO CUPID ARROW'),
-              Text('Find Your Soulmate'),
-              TextButton(onPressed: (){},
-                  style: TextButton.styleFrom(
+              const Text('WELCOME TO CUPID ARROW'),
+              const SizedBox(
+                height: 10.0,
 
-                    backgroundColor: Colors.blueAccent,
-                    primary: Colors.white,
-                    onSurface: Colors.grey,
+              ),
+              const Text('Find Your Soulmate'),
+              const SizedBox(
+                height: 70.0,
+
+              ),
+              Container(
+                margin: EdgeInsets.all(20),
+                width: 200,
+                height: 50,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Colors.red, Colors.blue],
+                    begin: FractionalOffset.centerLeft,
+                    end: FractionalOffset.centerRight,
                   ),
-                  child: Text('START'))
+                    borderRadius: BorderRadius.all(Radius.circular(20))
+                ),
+
+                child: TextButton(onPressed: (){},
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.white),
+                      shape:MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
+                      ),
+                      // backgroundColor: MaterialStateProperty.all(Colors.purple),
+                      // padding: MaterialStateProperty.all(
+                      //     EdgeInsets.symmetric(vertical: 20, horizontal: 100)),
+
+                    ),
+                    child: const Text('START')),
+              )
 
             ],
           )
