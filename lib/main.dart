@@ -1,3 +1,4 @@
+import 'package:cupid_arrow/screens/loginchoose_screen.dart';
 import 'package:cupid_arrow/screens/splash_screen.dart';
 import 'package:cupid_arrow/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         SplashScreen.id:(context)=>SplashScreen(),
         WelcomeScreen.id:(context)=>WelcomeScreen(),
+        LoginChooseScreen.id:(context)=>LoginChooseScreen(),
 
       },
     );

@@ -1,3 +1,4 @@
+import 'package:cupid_arrow/screens/loginchoose_screen.dart';
 import 'package:flutter/material.dart';
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -60,7 +61,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     borderRadius: BorderRadius.all(Radius.circular(20))
                 ),
 
-                child: TextButton(onPressed: (){},
+                child: TextButton(
+                    onPressed: (){
+                      Navigator.pushNamed(context,LoginChooseScreen.id);
+
+                },
                     style: ButtonStyle(
                       foregroundColor: MaterialStateProperty.all(Colors.white),
                       shape:MaterialStateProperty.all<RoundedRectangleBorder>(
