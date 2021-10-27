@@ -32,17 +32,18 @@ class _SplashScreenState extends State<SplashScreen> {
       body: SafeArea(
       child: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children:<Widget> [
-            Image.asset("images/logo_cupid.png",
-              width: 400.0,
-              height: 400.0,
-
+            Image.asset("images/logo_cupid1.png",
+              width: 300.0,
+              height: 300.0,
             ),
             Text('CUPID ARROW'),
           ],
         ),
       ),
-    ),
+      ),
+
     );
   }
 }
