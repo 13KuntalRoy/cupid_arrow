@@ -1,4 +1,4 @@
-import 'package:cupid_arrow/screens/login_phone_screen.dart';
+import 'package:cupid_arrow/screens/auth/login_phone_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginChooseScreen extends StatefulWidget {

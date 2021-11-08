@@ -1,4 +1,4 @@
-import 'package:cupid_arrow/screens/loginchoose_screen.dart';
+import 'package:cupid_arrow/screens/auth/loginchoose_screen.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatefulWidget {

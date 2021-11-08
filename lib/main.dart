@@ -1,5 +1,5 @@
-import 'package:cupid_arrow/screens/login_phone_screen.dart';
-import 'package:cupid_arrow/screens/loginchoose_screen.dart';
+import 'package:cupid_arrow/screens/auth/login_phone_screen.dart';
+import 'package:cupid_arrow/screens/auth/loginchoose_screen.dart';
 import 'package:cupid_arrow/screens/splash_screen.dart';
 import 'package:cupid_arrow/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';

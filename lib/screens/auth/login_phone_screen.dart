@@ -106,7 +106,7 @@ class _LoginPhoneScreenState extends State<LoginPhoneScreen> {
                             borderRadius: BorderRadius.circular(20))),
                   ),
                   child: Text(
-                    'Create account'.toUpperCase(),
+                    'LOGIN '.toUpperCase(),
                     style: const TextStyle(fontSize: 24),
                   )),
             ),
